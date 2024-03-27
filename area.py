@@ -367,7 +367,7 @@ def compute_solar_area(
 
         fig = plt.figure(figsize=(5,5), constrained_layout=True)
         ax_map = plt.subplot(projection=map_)
-        map_.plot(ax_map)
+        map_.plot(axes=ax_map)
         map_.draw_limb(
             color='black',
             linewidth=1.25, linestyle='dotted'
