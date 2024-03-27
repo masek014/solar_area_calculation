@@ -365,7 +365,7 @@ def compute_solar_area(
     # Just some visualization stuff.
     if visualize:
 
-        fig = plt.figure(figsize=(8,8), constrained_layout=True)
+        fig = plt.figure(figsize=(5,5), constrained_layout=True)
         ax_map = plt.subplot(projection=map_)
         map_.plot(ax_map)
         map_.draw_limb(
@@ -380,7 +380,7 @@ def compute_solar_area(
         ax_map.set_title('FOV on solar disk')
 
         # Plot the 3D surface and FOV.
-        fig = plt.figure(figsize=(8,8), constrained_layout=True)
+        fig = plt.figure(figsize=(5,5), constrained_layout=True)
         ax_3d = plt.subplot(projection='3d')
         ax_3d.view_init(elev=0, azim=0)
         plot_sphere(ax_3d)
