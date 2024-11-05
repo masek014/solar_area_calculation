@@ -1,0 +1,22 @@
+[project]
+dynamic = ["version"]
+requires-python = ">=3.10"
+name = "solar_area_calculation"
+dependencies = [
+    "astropy",
+    "matplotlib",
+    "numpy",
+    "regions",
+    "sunpy"
+]
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools >= 61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "solar_area_calculation.__version__"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
