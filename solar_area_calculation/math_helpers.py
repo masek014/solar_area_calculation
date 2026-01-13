@@ -70,7 +70,7 @@ def unit_normal(a: Point, b: Point, c: Point) -> Point:
     return Point(x / magnitude, y / magnitude, z / magnitude)
 
 
-def dot_product(a: Point, b: Point) -> Point:
+def dot_product(a: Point, b: Point) -> float:
     '''Compute the dot product of 3-dimensional vectors.'''
     return a.x*b.x + a.y*b.y + a.z*b.z
 
